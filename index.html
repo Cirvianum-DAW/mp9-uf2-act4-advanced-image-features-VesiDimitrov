@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>El meu projecte</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script src="js/script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <img src="path/to/image.jpg" alt="Image" />
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <div class="image-info"></div>
+        <a href="/html/basic_image.html">Basic</a>
+      </div>
+      <div>
+        <div class="image-info"></div>
+        <a href="/html/resolutin_switching.html">Resoluion</a>
+      </div>
+      <div>
+        <div class="image-info"></div>
+        <a href="/html/image_aligment.html">Alignment</a>
+      </div>
+      <div>
+        <div class="image-info"></div>
+        <a href="/html/image_gallery.html">Gallery</a>
+      </div>
+      <div>
+        <div class="image-info"></div>
+        <a href="/html/figure_picture.html">Figure</a>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
