@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Alignment</title>
+    <style>
+        img {
+            max-width: 100%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Alignment Example</h1>
+    
+    <img src="../images/poma.jpg" alt="Mapa de la imatge" usemap="#mapa_imatge">
+
+    <map name="mapa_imatge">
+        <area shape="rect" coords="0,0,100,100" href="pagina1.html" alt="Área 1">
+        <area shape="circle" coords="200,200,50" href="pagina2.html" alt="Área 2">
+        <area shape="poly" coords="300,300,400,350,450,250" href="pagina3.html" alt="Área 3">
+    </map>
+
+    <p>La propiedad `max-width` en el estilo CSS aplicado a las imágenes ayuda a hacer que estas sean responsivas.
+     Al establecer `max-width: 100%;`, garantizamos que la imagen no será más ancha que su contenedor. Esto significa 
+     que la imagen se ajustará automáticamente al tamaño del contenedor en el que se encuentra, lo que la hace adaptable
+     a diferentes tamaños de pantalla y dispositivos. La propiedad `height: auto;` asegura que la imagen mantenga su 
+     proporción original, evitando distorsiones.</p>
+</body>
+</html>
