@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imatge amb Llegenda</title>
+    <style>
+        /* Estils per a la imatge i la llegenda */
+        figure {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercici 7 i 8</h1>
+    
+    <!-- Utilitzant l'element figure per encapsular la imatge amb la llegenda -->
+    <figure>
+        <!-- Utilitzant l'element picture per a fonts d'imatge basades en condicions de mitjans -->
+        <picture>
+            <!-- Diferents fonts d'imatge per a diferents condicions de mitjans -->
+            <source media="(min-width: 800px)" srcset="../images/poma.jpg">
+            <source media="(min-width: 600px)" srcset="../images/poma.jpg">
+            <source srcset="../images/poma.jpg"> <!-- Font d'imatge per a qualsevol altra condició -->
+            <!-- Fallback per a navegadors que no suporten l'element picture -->
+            <img src="../images/poma.jpg" alt="Exemple d'Imatge">
+        </picture>
+        <figcaption>Llegenda de la imatge.</figcaption>
+    </figure>
+
+    <!-- Explicació del propòsit dels elements figure i figcaption -->
+    <p>L'element <code>&lt;figure&gt;</code> s'utilitza per encapsular contingut multimèdia com ara imatges, vídeo, gràfics, diagrames, etc., juntament amb una descripció utilitzant l'element <code>&lt;figcaption&gt;</code>. Això permet proporcionar un context o una explicació relacionada amb la imatge. L'ús d'aquests elements ajuda a millorar l'accessibilitat del contingut i la seva estructura semàntica, ja que indiquen clarament la relació entre la imatge i la llegenda.</p>
+</body>
+</html>

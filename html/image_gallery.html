@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria d'Imatges</title>
+    <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css">
+    <style>
+        /* Estil per a la galeria d'imatges */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .galeria img {
+            margin: 10px;
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercici 6</h1>
+    
+    <!-- Contenidor de la galeria -->
+    <div class="galeria">
+        <!-- Imatges -->
+        <a href="../images/poma.jpg" data-lightbox="galeria"><img src="../images/poma.jpg" alt="Imatge 1"></a>
+        <a href="../images/Aguila1.avif" data-lightbox="galeria"><img src="../images/Aguila1.avif" alt="Imatge 2"></a>
+        <a href="../images/Aguila2.webp" data-lightbox="galeria"><img src="../images/Aguila2.webp" alt="Imatge 3"></a>
+        <!-- Afegeix més imatges aquí -->
+    </div>
+
+    <!-- JavaScript per a Lightbox2 -->
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
+</body>
+</html>
